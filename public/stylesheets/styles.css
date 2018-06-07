@@ -15,8 +15,15 @@ html {
     font-family: "Alef";
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
 .bigimg {
-    background-image: url(../images/oilrig.jpg);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(20, 188, 198, 0.6895133053221288) 50%, rgba(0, 212, 255, 1) 100%, rgba(8, 31, 135, 1) 100%);
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,9 +36,17 @@ html {
 
 .text-sm {
     font-size: 16px;
-    color: #ffffff;
+    color: #000;
     font-weight: bolder;
-    text-shadow: 2px 2px 2px #ffffff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+#demo {
+    color: rgb(243, 89, 89);
+}
+
+.info {
+    color: rgb(243, 89, 89);
 }
 
 @media (min-width: 560px) {
@@ -75,7 +90,22 @@ html {
     text-align: center;
 }
 
+@media(min-width: 560px) {
+    .middle {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 56px;
+    }
+    .middle h1 {
+        font-size: 40px;
+    }
+}
+
 hr {
     width: 40%;
     margin: auto;
+    background-color: rgba(241, 132, 59, 0.781);
 }
